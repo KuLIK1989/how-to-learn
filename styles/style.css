@@ -72,11 +72,11 @@
   font-size:18px;
   font-weight:normal;
   text-decoration:none;
-  color: #2f80ed;;
+  color: #2f80ed;
 }
 .description{
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 .two-columns{  
   width:80%;
@@ -330,7 +330,7 @@
   line-height:30px;
   font-size:18px;
   font-weight:normal;
-  list-style:none; 
+  list-style:none;
   color: white;
   text-decoration:none;
 }

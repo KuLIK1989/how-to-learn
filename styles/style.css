@@ -27,8 +27,9 @@
   position: absolute;
   background-color:#2f80ed;
   right:0px;
-  margin-top:64px;
+  top:64px;
   z-index:0;
+  margin:0px;
   
 }
 
@@ -39,13 +40,15 @@
   right:0px;
   bottom:0px;
   z-index:1;
+  margin:0px;
 }
 
-.logo__place__header {
+.logo_place_header {
   width:228px;
   height:32px;
   position:absolute;
-  margin:30px 0 0 64px;
+  top:30px;
+  left:64px;
   z-index:1;
 }
 
@@ -62,12 +65,13 @@
 .header__subtitle {
   position:absolute;
   width:388px;
-  bottom:0px;
-  margin:0 0 30px 64px;
+  bottom: 30px;
+  left: 64px;
   line-height:25px;
   font-size:18px;
   font-weight:normal;
-  z-index:1;
+  z-index:2;
+  margin: 0px;
 }
 .header__link{
   line-height:25px;
@@ -105,7 +109,7 @@
   line-height:34px;
   font-size: 24px;
   font-weight:normal;
-  margin-bottom:0px;
+  margin-bottom:30px;
   margin-top:0px;
 }
 .two-columns__span-accent{
@@ -113,9 +117,8 @@
   font-size:24px;
   font-weight:600;
 }
-.two-columns__paragraph:nth-of-type(2){
-  margin-top:30px;
-  margin-bottom:30px;
+.two-columns__paragraph:last-of-type{
+  margin-bottom:0px;
 }
 .digits{
   display:flex;
@@ -128,7 +131,7 @@
   width:60%;
   text-align:center;
   align-self:center;
-  margin-bottom:20px;
+  margin:0px;
 }
 .section-subtitle{
   line-height:34px;
@@ -141,8 +144,8 @@
   margin-bottom:0px;  
 }
 .table__heading{
-  line-height:1.2;
-  font-size:18px;
+  line-height:1.15;
+  font-size:24px;
   font-weight:600;
   margin-bottom:20px;
   margin-top:0px;
@@ -209,7 +212,7 @@
 }
 .kaufman{
   position:relative;
-  background-color:#000000;
+  background-color:#1f1f1f;
   display:flex;
   flex-direction:column;
   overflow:hidden;
@@ -282,7 +285,7 @@
 }
 .footer{  
   min-height:350px;
-  background-color:#000000;
+  background-color:#1f1f1f;
   display:flex;
   justify-items:center;  
 }
@@ -326,7 +329,8 @@
 .footer__columns-links{  
   padding-left:0px;
   margin-top:20px;
-  margin-bottom:18px;   
+  margin-bottom:18px;
+  list-style-type: none;
 }
 .footer__column-link{
   line-height:30px;

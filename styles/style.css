@@ -1,3 +1,7 @@
+@keyframes rotation {
+  from{transform:rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -30,7 +34,6 @@
   top:64px;
   z-index:0;
   margin:0px;
-  
 }
 
 .header__main-illustration {
@@ -79,10 +82,81 @@
   font-weight:normal;
   text-decoration:none;
   color:#2f80ed;
+  transition: opacity 2s linear 0s;
+}
+.header__link:hover{
+  opacity:.1;
 }
 .description{
   display: flex;
   justify-content: center;
+}
+.techniques{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+}
+.cards{
+  list-style:none;
+  display:flex;
+  width:920px;
+  flex-wrap:wrap;
+  align-self: center;
+  padding:0px;
+  }
+.cards__item{
+  
+  margin: 60px 100px 0 0;
+  width: 240px;
+}
+.cards__item:nth-of-type(3){
+  margin: 60px 0 0 0px;
+}
+.cards__image{
+  
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 0 40px;
+}
+.cards__title{
+  
+  line-height: 1.15;
+  font-size:24px;
+  font-weight:600;
+  margin:43px 0 0 0;
+  text-align: center;
+}
+.cards__description{
+  
+  line-height:23px;
+  font-size:18px;
+  font-weight:normal;
+  margin:16px 0 0 0;
+  text-align: center;
+
+}
+.video{
+  display: flex;
+  flex-direction: column;
+}
+.video__iframes{
+  align-self: center;
+}
+.video__iframe{
+  width: 515px;
+  height: 316px;
+  transform: translate(0px,60px);
+  
+}
+.video__iframe:first-of-type{
+  margin-right: 20px;
+}
+.oakley{
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
 }
 .two-columns{  
   width:80%;
@@ -90,7 +164,7 @@
   margin-top:100px;
   display:flex;
   justify-content:space-between;
-  margin-bottom:100px;
+  
 }
 .two-columns__brief{
   width:175px;
@@ -117,12 +191,73 @@
   font-size:24px;
   font-weight:600;
 }
+
 .two-columns__paragraph:last-of-type{
   margin-bottom:0px;
 }
 .digits{
   display:flex;
   flex-direction:column;  
+}
+.khan{
+  background-color: #f2f2f2;
+  display: flex;
+}
+.khan__container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 105px auto 0 auto;  
+}
+.khan__author{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin:0px;
+}
+.khan__title{
+  line-height:1.15;
+  font-size:60px;
+  font-weight:600;
+  margin:0 0 50px 0;
+}
+.khan__quote{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin:0 0 36px 0;
+}
+.knah__quote-author{
+  line-height:1.15;
+  font-weight:24px;
+  font-weight:600;
+  margin: 0 0 10px 0;
+}
+.quote-author-subline{
+  line-height:1.15;
+  font-size:24px;
+  font-weight:normal;
+  margin:0 0 68px 0;
+}
+.khan__buy-link{
+  line-height:42px;
+  font-size:30px;
+  font-weight:normal;
+  color:#2f80ed;
+  margin-left: 48px;
+  text-decoration:none;
+  transition: opacity 2s linear 0s;  
+}
+.khan__buy-link:hover{
+  opacity:.1;
+}
+.khan__book-pic{
+  width:620px;
+  height:608px;
+}
+.khan__book-container{
+  display: flex;
 }
 .section-title{  
   line-height:1.15;
@@ -131,7 +266,7 @@
   width:60%;
   text-align:center;
   align-self:center;
-  margin:0px;
+  margin:100px 0 0 0;
 }
 .section-subtitle{
   line-height:34px;
@@ -209,6 +344,10 @@
   top:50%;
   text-decoration:none;
   color:#2f80ed;
+  transition: opacity 2s linear 0s;
+}
+.feynman__link:hover{
+  opacity:.1;
 }
 .kaufman{
   position:relative;
@@ -216,6 +355,8 @@
   display:flex;
   flex-direction:column;
   overflow:hidden;
+}.rotation{
+  animation: rotation 20s linear infinite;
 }
 .kaufman__triangle{
   position:absolute;
@@ -225,7 +366,7 @@
   top:0;
   background-image:url(../images/kaufman-triangle.svg);
   background-size:877px 877px;
-  z-index:1;
+  z-index:1;  
 }
 .section-title_theme_dark{  
   color: white;
@@ -285,6 +426,26 @@
   line-height:1.2;
   font-size:18px;
   font-weight:normal;
+}
+.resources{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resources__logo-zone{
+  width: 1100px;
+  margin: 80px 0 217px 0;
+}
+.resources__logo{
+  width:270px;
+  height:38px;
+  transition: opacity 2s linear 0s;
+}
+.resources__logo:hover{
+  opacity:.1;
+}
+.resources__link{
+  text-decoration: none;
 }
 .footer{  
   min-height:350px;

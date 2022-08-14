@@ -6,4 +6,5 @@
     bottom:0px;
     z-index:1;
     margin:0px;
+    object-fit: cover;
   }
